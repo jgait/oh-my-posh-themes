@@ -2,7 +2,21 @@
     "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
     "blocks": [
         {
+            "alignment": "left",
+            "segments": [
+                {
+                    "type": "python",
+                    "style": "powerline",
+                    "foreground": "#95ffa4",
+                    "background": "#FFFFFF00",
+                    "template": "  Venv: {{ .Venv }} "
+                }
+            ],
+            "type": "prompt"
+        },
+        {
             "type": "rprompt",
+            "newline": true,
             "segments": [
                 {
                     "foreground": "#007ACC",
@@ -47,14 +61,6 @@
                     "style": "powerline",
                     "template": " {{ .HEAD }} ",
                     "type": "git"
-                },
-                {
-                    "type": "python",
-                    "style": "powerline",
-                    "powerline_symbol": "\ue0b0",
-                    "foreground": "#100e23",
-                    "background": "#906cff",
-                    "template": "  {{ .Venv }} "
                 }
             ],
             "type": "prompt"
