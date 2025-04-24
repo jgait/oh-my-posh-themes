@@ -54,7 +54,7 @@
                     "powerline_symbol": "\ue0b0",
                     "foreground": "#100e23",
                     "background": "#906cff",
-                    "template": "  {{ .Full }} "
+                    "template": "  {{ .Venv }} "
                 }
             ],
             "type": "prompt"
